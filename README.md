@@ -1,9 +1,8 @@
-# MySQL-Search-Replace-PHP
-Find and Replace in entire MySQL database as PHP script, PHP Class
-
 ------------------------------------------------------------------------
 #MySQL Search & Replace Tool
 ------------------------------------------------------------------------
+Find and Replace a 'string' in entire MySQL database as PHP script, PHP Class. Use as class or html form.
+
 
 #AUTHOR INFO
 ------------------------------------------------------------------------
@@ -16,11 +15,12 @@ http://sewmyheadon.com
 Update from MySQL to MySQLi Neeraj Singh
 https://github.com/neerajsinghsonu/MySQL-Search-Replace-PHP
 
+
 #WHAT DOES THIS SCRIPT DO?
 ------------------------------------------------------------------------
 This MySQL Search & Replace tool provides an easy way to search an 
 existing MySQL database for any string and, if you wish, replace it with
-another string. 
+another string.
 
 
 #WHY WOULD I NEED THIS?
@@ -37,7 +37,7 @@ unwieldy when exported to a .sql file and opened in a text editor.
 ------------------------------------------------------------------------
 In order to use this tool, you'll either need to place it on the server 
 that contains the database you need to search, or if you're using it 
-remotely, make sure you have remote access to the database.  
+remotely, make sure you have remote access to the database. 
 
 
 #HOW DO I USE MySQL SEARCH & REPLACE?
@@ -79,7 +79,7 @@ COPYRIGHT
 MySQL Search & Replace is released under the GPL (see license.txt).
 
 
-#Example
+#Example as PHP include
 ```php
 <?php
 
@@ -105,6 +105,10 @@ $replace = 'http://www.newsite.com';
 // do now..
 $tool = (new MySQLSearchReplace($config, $search, $replace))->startFindReplace();
 ```
+
+#Example as HTML
+
+![alt tag](https://raw.githubusercontent.com/neerajsinghsonu/MySQL-Search-Replace-PHP/master/MySQL-Search-Replace/mysql-search-replace-form.PNG)
 
 #Class File (MySQLSearchReplace)
 
