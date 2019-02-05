@@ -128,7 +128,7 @@ class MySQLSearchReplace
         $this->getAllTables();
         // output in html table format
         $output    = "<tr><th>STATUS</th><th>ROWS AFFECTED</th><th>TABLE/FIELD</th><th>ERROR</th><th>QUERY</th></tr>";
-        $key       = 'Tables_in_' . strtolower($this->mysql_db);
+        $key       = 'Tables_in_' . $this->mysql_db;
         $occurence = 0;
         $no_of_tbl = count($this->tables);
         // scan each table each column except primary key column
